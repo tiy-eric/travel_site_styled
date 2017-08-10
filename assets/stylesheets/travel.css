@@ -1,9 +1,12 @@
 /*
 Set the box sizing for every element on the page
-to border-box. Elements should have padding and 
+to border-box. Elements should have padding and
 border included in the element's total width and height
 */
+* {
+box-sizing: border-box;
 
+}
 
 
 /*
@@ -13,25 +16,36 @@ Set some common styles for the body of the page
  - font to helvetica
  - font size to 16px
 */
-
+body{
+  background: #000000;
+  color: #FFFFFF;
+  font-family: helvetica;
+  font-size: 16px;
+}
 
 
 /*
 override our h1 style to have a font size of 32px
 */
-
+h1{
+  font-size: 32px;
+}
 
 
 /*
 override our h2 style to have a font size of 28px
 */
-
+h2{
+  font-size: 28px;
+}
 
 
 /*
 style the element with the id of header-statement to have centered text
 */
-
+#header-statement{
+  text-align: center;
+}
 
 
 /*
@@ -41,7 +55,12 @@ style the elements with a class of page-row
  - give the element a padding of 5%
  - give the element a margin of 2% on the top and bottom
 */
-
+.page-row{
+  width: 100%;
+  clear: both;
+  padding: 5%;
+  margin: 2% 0 2% 0;
+}
 
 
 /*
@@ -57,9 +76,20 @@ style the elements with a class of card
  - set the background size to contain //Scale the image to the largest size such that both its width and its height can fit inside the content area
  - set the background to not repeat
 */
+.card {
+  width: 20%;
+  height: 300px;
+  margin: 2.5%;
+  padding: 15% 0px 0px 0px;
+  float: left;
+  background: #FFFFFF no-repeat;
+  background-size: contain;
+  text-align: center;
+  color: #000000;
+
+}
 
 
- 
 /*
 style the element with the id of hero
  - width of 100%
@@ -68,35 +98,49 @@ style the element with the id of hero
  - set the background to not repeat
  - set the background image to our hero image (travel_hero.jpg) in our assets/images directory
 */
-
+#hero{
+  width: 100%;
+  height: 450px;
+  background: url('../images/travel_hero.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 
 /*
  target the element with the id of spain
  set the background image to (spain_flag.svg) in our assets/images directory
 */
-
+#spain{
+  background-image: url('../images/spain_flag.svg');
+}
 
 
 /*
  target the element with the id of italy
  set the background image to (italy_flag.svg) in our assets/images directory
 */
-
+#italy{
+  background-image: url('../images/italy_flag.svg');
+}
 
 
 /*
  target the element with the id of aruba
  set the background image to (aruba_flag.svg) in our assets/images directory
 */
-
+#aruba{
+  background-image: url('../images/aruba_flag.svg');
+}
 
 
 /*
  target the element with the id of chile
  set the background image to (chile_flag.svg) in our assets/images directory
 */
-
+#chile{
+  background-image: url('../images/chile_flag.svg');
+}
 
 
 /*
@@ -105,19 +149,28 @@ style the element with the id of hero
   - height of 100px
   - line height of 100px
 */
- 
+#masthead{
+  width:100%;
+  height: 100px;
+  line-height: 100px;
+}
 
 
 /*
- target the element with the id of nav-list and float it to the left
+ target the element with the id of logo and float it to the left
 */
+#logo{
+  float: left;
 
+}
 
 
 /*
  target the element with the id of nav and float it to the right
 */
-
+#navbar{
+  float: right;
+}
 
 
  /*
@@ -126,7 +179,11 @@ style the element with the id of hero
   - remove bullets from the unorder list
 */
 
-
+#nav-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 /*
  target the elements with the class of nav-link
@@ -134,7 +191,11 @@ style the element with the id of hero
   - give a top and bottom padding of 5px
   - left and right padding of 15px
 */
+.nav-link{
+  padding: 5px 15px 5px 15px;
+  float: left;
 
+}
 
 
 /*
@@ -142,7 +203,11 @@ style the element with the id of hero
   - remove the underline from the links
   - make sure the text is white
 */
+#masthead a{
+  text-decoration: none;
+  color: #FFFFFF;
 
+}
 
 
 /*
@@ -151,52 +216,73 @@ style the element with the id of hero
   - set the height to 100px
   - set the line height to 100px
 */
-
+#footer{
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
 
 
 /*
  target the element with the id of copyright and float it to the left
 */
-
+#copyright{
+  float: left;
+}
 
 
 /*
- target the table element 
+ target the table element
   - give a 2px black solid border to the table
   - collaps the border to remove spacing between cells
   - make the width 100%
 */
-
+table{
+  border: 2px solid #000000;
+  border-collapse: collapse;
+  width: 100%;
+}
 
 
 /*
  target the tr, td, and th elements
   - give a 2px black solid border to the table
 */
-
+tr, td, th {
+  border: 2px solid #000000;
+}
 
 
 /*
- target the th element 
+ target the th element
   - set the background color to black
   - set the text color to white
 */
-
+th{
+  background: #000000;
+  color: #FFFFFF;
+}
 
 
 /*
- target the element with the id of travel-table 
+ target the element with the id of travel-table
   - make the text color black
   - make the background color white
 */
-
+#travel-table{
+  color: #000000;
+  background: #FFFFFF;
+}
 
 
 /*
- target the h3 element within the element with the id of travel-table 
+ target the h3 element within the element with the id of travel-table
   - center align the text
 */
-
+#travel-table h3
+{
+  text-align: center;
+}
 
 
 /*
@@ -205,11 +291,17 @@ style the element with the id of hero
   - give a top and bottom padding of 5px
   - give a left and right padding of 15px
 */
-
+#social-links{
+  float: right;
+  padding: 5px 15px 5px 15px;
+}
 
 
 /*
  target the links inside element with the id of social-links
   - make sure the text is white and there is no underline
 */
-
+#social-links a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
