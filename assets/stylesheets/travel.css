@@ -103,6 +103,7 @@ style the element with the id of hero
   height: 450px;
   background: url('../images/travel_hero.jpg') no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 
